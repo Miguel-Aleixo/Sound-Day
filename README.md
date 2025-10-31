@@ -12,8 +12,6 @@ TypeScript (ES6+): Linguagem de programação tipada para maior segurança e man
 
 Tailwind CSS: Framework CSS utilitário para estilização rápida e responsiva.
 
-Outras dependências: (Se houver outras bibliotecas ou ferramentas utilizadas, liste-as aqui.)
-
 🧰 Funcionalidades principais
 Gerenciamento de artistas: Cadastro e edição de artistas com informações detalhadas.
 Controle de músicas: Associação de músicas aos artistas e gêneros.
