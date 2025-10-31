@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Sistema de gerenciamento musical desenvolvido com Next.js, TypeScript (ES6+) e Tailwind CSS.
 
-## Getting Started
+📦 O que é
+O Sound-Day é uma aplicação web que permite aos administradores cadastrar artistas, músicas e trechos, vinculando cada música ao seu respectivo artista e gênero.
+O sistema conta com um painel administrativo completo para criar, editar, excluir e visualizar informações de forma organizada e intuitiva.
+É responsivo e foi desenvolvido para oferecer uma experiência de gerenciamento simples, moderna e eficiente.
 
-First, run the development server:
+🚀 Tecnologias utilizadas
+Next.js: Framework React para construção de interfaces com renderização no servidor (SSR) e geração de sites estáticos (SSG).
 
-```bash
+TypeScript (ES6+): Linguagem de programação tipada para maior segurança e manutenção do código.
+
+Tailwind CSS: Framework CSS utilitário para estilização rápida e responsiva.
+
+Outras dependências: (Se houver outras bibliotecas ou ferramentas utilizadas, liste-as aqui.)
+
+🧰 Funcionalidades principais
+Gerenciamento de artistas: Cadastro e edição de artistas com informações detalhadas.
+Controle de músicas: Associação de músicas aos artistas e gêneros.
+Trechos de músicas: Criação e organização de trechos relacionados a cada faixa.
+Painel administrativo: Interface intuitiva para gerenciar todos os dados do sistema.
+Design responsivo: Layout adaptável para diferentes tamanhos de tela, proporcionando uma boa experiência em dispositivos móveis e desktops.
+
+⚙️ Como executar
+
+Pré-requisitos
+Node.js (v14 ou superior)
+npm ou Yarn como gerenciador de pacotes
+
+Passos
+Clone o repositório:
+
+git clone https://github.com/devnkz/Sound-Day.git
+cd Sound-Day
+
+
+Instale as dependências:
+
+npm install
+
+
+ou
+
+yarn install
+
+
+Execute o servidor de desenvolvimento:
+
 npm run dev
-# or
+
+
+ou
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Acesse a aplicação em http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🗂️ Estrutura do projeto
 
-## Learn More
+/
+├── public/           # Imagens e arquivos estáticos
+├── src/
+│   ├── components/   # Componentes reutilizáveis (ex: ArtistaCard, MusicaCard, Modal)
+│   ├── app/          # Rotas e páginas do projeto (App Router)
+│   ├── hooks/        # Hooks personalizados (ex: useMusicas, useArtistas)
+│   ├── services/     # Conexão com API e funções de requisição
+│   ├── styles/       # Estilos globais e configurações Tailwind
+│   └── utils/        # Funções auxiliares (ex: formatações, validações)
+├── .env.local        # Variáveis de ambiente locais (não comitar este arquivo)
+├── tailwind.config.js # Configuração do Tailwind CSS
+├── next.config.js     # Configuração do Next.js
+└── package.json       # Dependências e scripts do projeto
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+⚙️ Variáveis de ambiente
+Crie um arquivo .env.local na raiz do projeto com as seguintes variáveis:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+NEXT_PUBLIC_API_URL=http://localhost:8080/api
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 Licença
+Este projeto está licenciado sob a MIT License.
