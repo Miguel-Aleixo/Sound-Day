@@ -51,9 +51,6 @@ ou
 
 yarn dev
 
-
-Acesse a aplicação em http://localhost:3000
-
 🗂️ Estrutura do projeto
 
 /
